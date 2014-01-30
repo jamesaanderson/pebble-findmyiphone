@@ -1,0 +1,17 @@
+{
+  "uuid": "26e21608-4784-4bce-b848-6f941bf6bfbc",
+  "shortName": "Find My iPhone",
+  "longName": "Find My iPhone",
+  "companyName": "James A. Anderson",
+  "versionCode": 1,
+  "versionLabel": "1.0.0",
+  "watchapp": {
+    "watchface": false
+  },
+  "appKeys": {
+    "dummy": 0
+  },
+  "resources": {
+    "media": []
+  }
+}
