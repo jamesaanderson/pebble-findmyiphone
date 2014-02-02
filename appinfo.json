@@ -9,9 +9,12 @@
     "watchface": false
   },
   "appKeys": {
-    "dummy": 0
+    "index": 0,
+    "id": 1,
+    "name": 2
   },
   "resources": {
     "media": []
-  }
+  },
+  "capabilities": ["configurable"]
 }

@@ -1,9 +1,5 @@
-
-#
-# This file is the default set of rules to compile a Pebble project.
-#
-# Feel free to customize this to your needs.
-#
+# Use the python sh module to run the jshint command
+from sh import jshint
 
 top = '.'
 out = 'build'
@@ -16,6 +12,9 @@ def configure(ctx):
 
 def build(ctx):
     ctx.load('pebble_sdk')
+
+    # Run jshint before compiling the app.
+    jshint("src/js/pebble-js-app.js")
 
     ctx.pbl_program(source=ctx.path.ant_glob('src/**/*.c'),
                     target='pebble-app.elf')
