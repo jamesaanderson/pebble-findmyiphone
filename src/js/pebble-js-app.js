@@ -76,9 +76,7 @@ function playSound(id) {
     device: id,
     subject: 'Find My iPhone Alert'
   };
-  post('fmipservice/device/'+localStorage.email+'/playSound', body, function(req) {
-    console.log(req.responseText);
-  });
+  post('fmipservice/device/'+localStorage.email+'/playSound', body, function(req) {});
 }
 
 function post(path, body, callback) {
@@ -144,5 +142,4 @@ Pebble.addEventListener('webviewclosed', function(e) {
 
 Pebble.addEventListener('appmessage', function(e) {
   playSound(e.payload.id);
-  console.log(e.payload.id);
 });
