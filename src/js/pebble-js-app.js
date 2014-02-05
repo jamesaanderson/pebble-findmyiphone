@@ -129,7 +129,7 @@ Pebble.addEventListener('ready', function(e) {
 });
 
 Pebble.addEventListener('showConfiguration', function(e) {
-  Pebble.openURL('https://dl.dropboxusercontent.com/s/s1qcypqfrt351pj/configuration.html');
+  Pebble.openURL('https://rawgithub.com/jamesaanderson/pebble-findmyiphone/master/html/configuration.html');
 });
 
 Pebble.addEventListener('webviewclosed', function(e) {
